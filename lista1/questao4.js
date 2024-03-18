@@ -5,14 +5,8 @@ Dica: A área de um triângulo é dada pela expressão:
 (base x altura)/2
 */
 
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+let v1 = 5
+let v2 = 7
 
-readline.question("Qual o valor da base? ", v1 => {
-    readline.question("Qual o valor da altura? ", v2 => {
-        area = ((Number(v1) * Number(v2))/2).toFixed(1)
-        console.log(area)
-    })
-})
+let area_triangulo = ((v1 * v2)/2).toFixed(1)
+console.log(`Área = ${area_triangulo}`)

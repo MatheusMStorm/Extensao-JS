@@ -4,16 +4,10 @@ A média aritmética de um conjunto de valores é dada pela soma dos valores div
 pela quantidade de valores considerados
 */
 
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+let a1 = 7
+let a2 = 8.5
+let a3 = 9.5
 
-readline.question("Qual foi sua nota da A1? ", a1 => {
-    readline.question("Qual foi sua nota da A2? ", a2 => {
-        readline.question("Qual foi sua nota da A3? ", a3 => {
-            let media = ((Number(a1) + Number(a2) + Number(a3))/3).toFixed(1)
-            console.log(media)
-        })
-    })
-})
+let media_aluno = ((a1 + a2 + a3)/3).toFixed(1)
+
+console.log(`Média final: ${media_aluno}`)
